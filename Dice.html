@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Rolling Simulator</title>
+</head>
+<body>
+
+    <h2>Dice Rolling Simulator 🎲</h2>
+
+    <h1 id="dice">🎲</h1>
+
+    <p id="result">Click the button to roll dice!</p>
+
+    <button onclick="rollDice()">Roll Dice</button>
+
+    <script>
+        function rollDice() {
+            let number = Math.floor(Math.random() * 6) + 1;
+
+            document.getElementById("dice").innerText = number;
+
+            document.getElementById("result").innerText =
+                "You got: " + number;
+        }
+    </script>
+
+</body>
+</html>
